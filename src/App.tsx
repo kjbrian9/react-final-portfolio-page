@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Logo from "./components/logo";
+import Header from "./components/Header";
+import "./styles/global.css";
+import "./styles/heroPage.css";
+import "./styles/aboutMeSection.css";
+import MainSection from "./components/MainSection";
+import AboutMeSection from "./components/AboutMeSection";
+import ProjectsPage from "./components/ProjectsPage";
+import MobileHeader from "./components/MobileHeader";
+import ContactsSection from "./components/ContactsSection";
 
 function App() {
+  const [getScreenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  window.addEventListener("resize", handleResize);
+  function handleResize() {
+    setScreenWidth(window.innerWidth);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {getScreenWidth > 740 ? <Header></Header> : <MobileHeader></MobileHeader>}
+      <div className="page-content">
+        <MainSection></MainSection>
+        <AboutMeSection></AboutMeSection>
+        <ProjectsPage></ProjectsPage>
+        <ContactsSection></ContactsSection>
+      </div>
+    </>
   );
 }
 

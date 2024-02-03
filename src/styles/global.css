@@ -1,0 +1,36 @@
+body {
+  background-color: #000000;
+  color: white;
+  margin: 0px;
+  font-family: poppins;
+}
+
+li {
+  list-style-type: none;
+}
+
+.logo-small {
+  width: 50px;
+  margin: 10px;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+
+.logo-small:hover {
+  transform: translateY(-20%);
+  opacity: 0.8;
+  filter: drop-shadow(0px 0px 10px white);
+}
+
+@media screen and (max-width: 740px) {
+  .logo-small {
+    width: 40px;
+    margin: 5px;
+    transition: transform 1s ease;
+    cursor: pointer;
+  }
+  .logo-small:hover {
+    transform: translateY(-10%);
+    opacity: 0.8;
+  }
+}

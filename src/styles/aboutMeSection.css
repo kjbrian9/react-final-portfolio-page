@@ -1,0 +1,41 @@
+.about-me-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+}
+
+.about-me-section {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.about-me-section-title {
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.7));
+  margin-left: 1vw;
+  font-size: 2rem;
+  font-weight: bolder;
+  align-self: flex-start;
+  animation: pulsing-animation 3s infinite;
+}
+
+@keyframes pulsing-animation {
+  0% {
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.7));
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .about-me-section-title {
+    align-self: center;
+  }
+}

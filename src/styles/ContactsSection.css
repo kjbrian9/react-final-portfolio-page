@@ -1,0 +1,65 @@
+.contacts-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 30vh;
+  height: 80vh;
+}
+
+.title-div {
+  border-bottom: 3px solid rgb(255, 255, 255);
+  width: 100%;
+  color: white;
+  animation: pulsing-animation 3s infinite ease-out;
+  font-size: 5rem;
+  margin-bottom: 5vh;
+}
+
+@keyframes pulsing-animation {
+  0% {
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.7));
+  }
+}
+.email-text {
+  text-decoration: none;
+  color: white;
+  margin-top: 2vh;
+  font-size: 1.3rem;
+}
+
+.location {
+  font-size: 1.3rem;
+}
+
+.email-text:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.7));
+  text-decoration: underline;
+}
+
+.vertical-line {
+  border: 3px solid rgb(255, 255, 255);
+  height: 50vh;
+  border-radius: 30px;
+}
+@media (max-width: 760px) {
+  .contacts-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: 0vw;
+  }
+
+  .title-div {
+    border-bottom: 3px solid black;
+    width: 100%;
+    animation: color-vibrate-animation 3s infinite ease-out;
+    font-size: 3rem;
+    margin-bottom: 5vh;
+  }
+}
