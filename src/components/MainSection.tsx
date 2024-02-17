@@ -13,7 +13,7 @@ function MainSection() {
           <source src={video} type="video/mp4" />
         </video>
         <div className="image-border-div">
-          <img src="./images/me2.JPG" className="me-image" alt="Me"></img>
+          <img src="./react-final-portfolio-page/images/me2.JPG" className="me-image" alt="Me"></img>
 
           <Circle scale={"1.1"} strokeDash={30} animationClass={"svg-circle-opposite"}></Circle>
           <Circle scale={"1.2"} strokeDash={20} animationClass={"svg-circle"}></Circle>
@@ -30,12 +30,12 @@ function MainSection() {
             <Logo
               logoLink="https://www.linkedin.com/in/brian-julius-kiss-256680280/"
               logoClass="logo-small"
-              logoImage="./images/linkedin-logo.webp"
+              logoImage="./react-final-portfolio-page/images/linkedin-logo.webp"
             ></Logo>
             <Logo
               logoLink="https://github.com/kjbrian9"
               logoClass="logo-small github-inverted"
-              logoImage="./images/github-logo.png"
+              logoImage="./react-final-portfolio-page/images/github-logo.png"
             ></Logo>
           </div>
         </div>

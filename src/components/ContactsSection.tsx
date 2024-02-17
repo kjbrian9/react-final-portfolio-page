@@ -10,21 +10,23 @@ function ContactsSection() {
           <Logo
             logoLink="https://www.linkedin.com/in/brian-julius-kiss-256680280/"
             logoClass="logo-small"
-            logoImage="./images/linkedin-logo.webp"
+            logoImage="./react-final-portfolio-page/images/linkedin-logo.webp"
           ></Logo>
           <Logo
             logoLink="https://github.com/kjbrian9"
             logoClass="logo-small"
-            logoImage="./images/github-logo.png "
+            logoImage="./react-final-portfolio-page/images/github-logo.png "
           ></Logo>
         </div>
-        <p
-          className="
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img className="location-logo" src="./react-final-portfolio-page/images/LocationLogo.svg"></img>
+          <p
+            className="
               location"
-        >
-          Košice, Slovakia
-        </p>
-
+          >
+            Košice, Slovakia
+          </p>
+        </div>
         <a href="mailto:brian.julius.k@gmail.com" className="email-text">
           brian.julius.k@gmail.com
         </a>

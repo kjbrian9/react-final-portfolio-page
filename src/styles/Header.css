@@ -52,6 +52,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  justify-content: end;
   font-size: 0.9rem;
   font-weight: bold;
   background-color: rgb(1, 6, 8, 0.6);
@@ -63,6 +64,7 @@
 .hamburger-menu-image {
   width: 20px;
   height: 20px;
+  margin-right: 5vw;
   cursor: pointer;
 }
 .hamburger-menu-div {
@@ -79,6 +81,11 @@
   top: 0;
   left: 0;
   z-index: 100;
+}
+
+.mobile-header-tab {
+  cursor: pointer;
+  margin: 0px 0px 20px 0px;
 }
 
 .hamburger-menu-div.visible {

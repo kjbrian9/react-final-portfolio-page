@@ -21,7 +21,9 @@ function Header() {
           <li className="header-tab" onClick={() => scrollToTarget("projectsSection")}>
             Projects
           </li>
-          <li className="header-tab">Contacts</li>
+          <li className="header-tab" onClick={() => scrollToTarget("contactsSection")}>
+            Contacts
+          </li>
         </ul>
       </nav>
     </header>

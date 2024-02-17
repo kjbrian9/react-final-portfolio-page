@@ -24,12 +24,12 @@ function AboutMeSection() {
             <Logo
               logoLink="https://www.linkedin.com/in/brian-julius-kiss-256680280/"
               logoClass="logo-small"
-              logoImage="./images/linkedin-logo.webp"
+              logoImage="./react-final-portfolio-page/images/linkedin-logo.webp"
             ></Logo>
             <Logo
               logoLink="https://github.com/kjbrian9"
               logoClass="logo-small github-inverted"
-              logoImage="./images/github-logo.png"
+              logoImage="./react-final-portfolio-page/images/github-logo.png"
             ></Logo>
           </Card>
         </div>

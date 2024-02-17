@@ -15,7 +15,7 @@ function MobileHeader() {
             <ul>
               <li>
                 <img
-                  src="./images/HamburgerMenu.svg"
+                  src="./react-final-portfolio-page/images/HamburgerMenu.svg"
                   className="hamburger-menu-image"
                   onClick={() => {
                     isHamburgerMenuVisible === false ? setHamburgerMenuVisible(true) : setHamburgerMenuVisible(false);
