@@ -68,6 +68,8 @@
   height: 50px;
   border: none;
   border-radius: 30px;
+
+  margin: 10px 0px 10px 0px;
   transition: box-shadow 0.5s;
 }
 
