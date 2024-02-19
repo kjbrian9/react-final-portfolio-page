@@ -3,6 +3,9 @@ import "../styles/ProjectsPage.css";
 import Logo from "./logo";
 import Project from "./Project";
 import { useState } from "react";
+import youtubeProjectImg from "../images/Youtube.png";
+import bachelorsImg from "../images/bachelorsProgram.png";
+import gamingShopImg from "../images/gamingEshop.png";
 
 function ProjectsPage() {
   const [currentProject, setCurrentProject] = useState("gaming webshop");
@@ -12,7 +15,7 @@ function ProjectsPage() {
       <div className="projects-div">
         {currentProject === "gaming webshop" ? (
           <Project
-            projectImage={"./react-final-portfolio-page/images/gamingEshop.png"}
+            projectImage={gamingShopImg}
             projectDescription={"A gaming webshop demo,showcasing the products and the brand itself"}
             projectDemo={"https://kjbrian9.github.io/gaming-webapp/"}
             projectGitHub={"https://github.com/kjbrian9/gaming-webapp"}
@@ -22,7 +25,7 @@ function ProjectsPage() {
         )}
         {currentProject === "bachelors thesis project" ? (
           <Project
-            projectImage={"./react-final-portfolio-page/images/bachelorsProgram.png"}
+            projectImage={bachelorsImg}
             projectDescription={
               "My bachelors thesis program focused on gathering information about GitHub repositories and evaluation these informationsf"
             }
@@ -34,7 +37,7 @@ function ProjectsPage() {
         )}
         {currentProject === "youtube front page" ? (
           <Project
-            projectImage={"./react-final-portfolio-page/images/Youtube.png"}
+            projectImage={youtubeProjectImg}
             projectDescription={"A gaming webshop demo,showcasing the products and the brand itself"}
             projectDemo={"https://kjbrian9.github.io/gaming-webapp/"}
             projectGitHub={"https://github.com/kjbrian9/gaming-webapp"}

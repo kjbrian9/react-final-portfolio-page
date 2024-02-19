@@ -1,6 +1,10 @@
 import Logo from "./logo";
 import "../styles/ContactsSection.css";
 
+import gitHubLogo from "../images/github-logo.png";
+import linkedInLogo from "../images/linkedin-logo.webp";
+import locationLogo from "../images/LocationLogo.svg";
+
 function ContactsSection() {
   return (
     <div className="contacts-div" id="contactsSection">
@@ -10,16 +14,12 @@ function ContactsSection() {
           <Logo
             logoLink="https://www.linkedin.com/in/brian-julius-kiss-256680280/"
             logoClass="logo-small"
-            logoImage="./react-final-portfolio-page/images/linkedin-logo.webp"
+            logoImage={linkedInLogo}
           ></Logo>
-          <Logo
-            logoLink="https://github.com/kjbrian9"
-            logoClass="logo-small"
-            logoImage="./react-final-portfolio-page/images/github-logo.png "
-          ></Logo>
+          <Logo logoLink="https://github.com/kjbrian9" logoClass="logo-small" logoImage={gitHubLogo}></Logo>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <img className="location-logo" src="./react-final-portfolio-page/images/LocationLogo.svg"></img>
+          <img className="location-logo" src={locationLogo}></img>
           <p
             className="
               location"

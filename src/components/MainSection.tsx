@@ -2,10 +2,14 @@ import "../styles/MainSection.css";
 import useSound from "use-sound";
 import Circle from "./Circle";
 import Logo from "./logo";
+import gitHubLogo from "../images/github-logo.png";
+import linkedInLogo from "../images/linkedin-logo.webp";
 
 function MainSection() {
   const video = require("./MainSectionVideo.mp4");
   const video2 = require("./MainSectionVideo2.mp4");
+  const meImage = require("../images/me2.JPG");
+
   return (
     <div className="page-section" id="mainSection">
       <div className="home-section-main-div">
@@ -13,7 +17,7 @@ function MainSection() {
           <source src={video} type="video/mp4" />
         </video>
         <div className="image-border-div">
-          <img src="./react-final-portfolio-page/images/me2.JPG" className="me-image" alt="Me"></img>
+          <img src={meImage} className="me-image" alt="Me"></img>
 
           <Circle scale={"1.1"} strokeDash={30} animationClass={"svg-circle-opposite"}></Circle>
           <Circle scale={"1.2"} strokeDash={20} animationClass={"svg-circle"}></Circle>
@@ -30,12 +34,12 @@ function MainSection() {
             <Logo
               logoLink="https://www.linkedin.com/in/brian-julius-kiss-256680280/"
               logoClass="logo-small"
-              logoImage="./react-final-portfolio-page/images/linkedin-logo.webp"
+              logoImage={linkedInLogo}
             ></Logo>
             <Logo
               logoLink="https://github.com/kjbrian9"
               logoClass="logo-small github-inverted"
-              logoImage="./react-final-portfolio-page/images/github-logo.png"
+              logoImage={gitHubLogo}
             ></Logo>
           </div>
         </div>

@@ -2,6 +2,9 @@ import Card from "../components/card";
 
 import Logo from "./logo";
 
+import gitHubLogo from "../images/github-logo.png";
+import linkedInLogo from "../images/linkedin-logo.webp";
+
 function AboutMeSection() {
   return (
     <div className="about-me-section" id="aboutMeSection">
@@ -24,12 +27,12 @@ function AboutMeSection() {
             <Logo
               logoLink="https://www.linkedin.com/in/brian-julius-kiss-256680280/"
               logoClass="logo-small"
-              logoImage="./react-final-portfolio-page/images/linkedin-logo.webp"
+              logoImage={linkedInLogo}
             ></Logo>
             <Logo
               logoLink="https://github.com/kjbrian9"
               logoClass="logo-small github-inverted"
-              logoImage="./react-final-portfolio-page/images/github-logo.png"
+              logoImage={gitHubLogo}
             ></Logo>
           </Card>
         </div>
