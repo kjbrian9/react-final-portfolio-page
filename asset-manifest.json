@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-final-portfolio-page/static/css/main.4254cbdd.css",
-    "main.js": "/react-final-portfolio-page/static/js/main.c53bfdbe.js",
+    "main.css": "/react-final-portfolio-page/static/css/main.5e3dd4c8.css",
+    "main.js": "/react-final-portfolio-page/static/js/main.dc28b1fe.js",
     "static/js/787.6637a194.chunk.js": "/react-final-portfolio-page/static/js/787.6637a194.chunk.js",
     "static/media/MainSectionVideo2.mp4": "/react-final-portfolio-page/static/media/MainSectionVideo2.716f21596ab0e1dec8cb.mp4",
     "static/media/MainSectionVideo.mp4": "/react-final-portfolio-page/static/media/MainSectionVideo.a22759cbc23bb709bcf5.mp4",
@@ -14,12 +14,12 @@
     "index.html": "/react-final-portfolio-page/index.html",
     "static/media/LocationLogo.svg": "/react-final-portfolio-page/static/media/LocationLogo.9f10cfaa5bed90603cb90c262eac0588.svg",
     "static/media/HamburgerMenu.svg": "/react-final-portfolio-page/static/media/HamburgerMenu.647a762cd0def5aefd66a2309218f84e.svg",
-    "main.4254cbdd.css.map": "/react-final-portfolio-page/static/css/main.4254cbdd.css.map",
-    "main.c53bfdbe.js.map": "/react-final-portfolio-page/static/js/main.c53bfdbe.js.map",
+    "main.5e3dd4c8.css.map": "/react-final-portfolio-page/static/css/main.5e3dd4c8.css.map",
+    "main.dc28b1fe.js.map": "/react-final-portfolio-page/static/js/main.dc28b1fe.js.map",
     "787.6637a194.chunk.js.map": "/react-final-portfolio-page/static/js/787.6637a194.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4254cbdd.css",
-    "static/js/main.c53bfdbe.js"
+    "static/css/main.5e3dd4c8.css",
+    "static/js/main.dc28b1fe.js"
   ]
 }
