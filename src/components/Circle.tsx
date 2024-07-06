@@ -27,7 +27,7 @@ function Circle({ scale, strokeDash, animationClass }: Props) {
           <circle
             id="circle-id"
             className="circle-transition"
-            style={{ filter: "drop-shadow( 0px 0px 0.3px rgba(255, 255, 255, 0.7))" }}
+            style={{ filter: "  " }}
             stroke="url('#myGradient')"
             strokeWidth="0.5px"
             strokeDasharray={strokeDash}

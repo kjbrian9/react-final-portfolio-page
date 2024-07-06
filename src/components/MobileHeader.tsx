@@ -2,6 +2,7 @@ import "../styles/global.css";
 import "../styles/Header.css";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
+import HamburgerMenuImg from "../images/HamburgerMenu.svg";
 function MobileHeader() {
   const [isHamburgerMenuVisible, setHamburgerMenuVisible] = useState(false);
 
@@ -15,7 +16,7 @@ function MobileHeader() {
             <ul>
               <li>
                 <img
-                  src="./react-final-portfolio-page/images/HamburgerMenu.svg"
+                  src={HamburgerMenuImg}
                   className="hamburger-menu-image"
                   onClick={() => {
                     isHamburgerMenuVisible === false ? setHamburgerMenuVisible(true) : setHamburgerMenuVisible(false);

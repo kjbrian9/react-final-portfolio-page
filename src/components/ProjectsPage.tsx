@@ -29,8 +29,7 @@ function ProjectsPage() {
             projectDescription={
               "My bachelors thesis program focused on gathering information about GitHub repositories and evaluation these informationsf"
             }
-            projectDemo={"https://kjbrian9.github.io/gaming-webapp/"}
-            projectGitHub={"https://github.com/kjbrian9/gaming-webapp"}
+            projectGitHub={"https://github.com/kjbrian9/Bachelors-program"}
           ></Project>
         ) : (
           <></>
@@ -38,9 +37,8 @@ function ProjectsPage() {
         {currentProject === "youtube front page" ? (
           <Project
             projectImage={youtubeProjectImg}
-            projectDescription={"A gaming webshop demo,showcasing the products and the brand itself"}
-            projectDemo={"https://kjbrian9.github.io/gaming-webapp/"}
-            projectGitHub={"https://github.com/kjbrian9/gaming-webapp"}
+            projectDescription={"Replication of the Youtube main-page  using css and html only "}
+            projectGitHub={"https://github.com/kjbrian9/YouTube-mainpage"}
           ></Project>
         ) : (
           <></>

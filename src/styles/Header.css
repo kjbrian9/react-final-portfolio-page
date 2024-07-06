@@ -13,11 +13,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 100px;
-  width: 25%;
+  margin-right: 50px;
+  width: 400px;
 }
 .header-tab {
   cursor: pointer;
+  width: 100px;
 }
 
 .header-tab:hover {
