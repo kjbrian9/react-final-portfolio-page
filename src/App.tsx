@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "./components/logo";
 import Header from "./components/Header";
 import "./styles/global.css";
 import "./styles/heroPage.css";

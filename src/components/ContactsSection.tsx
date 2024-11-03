@@ -1,10 +1,6 @@
 import Logo from "./logo";
 import "../styles/ContactsSection.css";
 
-import gitHubLogo from "../images/github-logo.png";
-import linkedInLogo from "../images/linkedin-logo.webp";
-import locationLogo from "../images/LocationLogo.svg";
-
 function ContactsSection() {
   return (
     <div className="contacts-div" id="contactsSection">
@@ -14,12 +10,19 @@ function ContactsSection() {
           <Logo
             logoLink="https://www.linkedin.com/in/brian-julius-kiss-256680280/"
             logoClass="logo-small"
-            logoImage={linkedInLogo}
+            logoImage="linkedin-logo.webp"
           ></Logo>
-          <Logo logoLink="https://github.com/kjbrian9" logoClass="logo-small" logoImage={gitHubLogo}></Logo>
+          <Logo
+            logoLink="https://github.com/kjbrian9"
+            logoClass="logo-small"
+            logoImage="github-logo.png"
+          ></Logo>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <img className="location-logo" src={locationLogo}></img>
+          <img
+            className="location-logo"
+            src={`${process.env.PUBLIC_URL}/images/LocationLogo.svg`}
+          ></img>
           <p
             className="
               location"

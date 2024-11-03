@@ -2,13 +2,9 @@ import "../styles/MainSection.css";
 import useSound from "use-sound";
 import Circle from "./Circle";
 import Logo from "./logo";
-import gitHubLogo from "../images/github-logo.png";
-import linkedInLogo from "../images/linkedin-logo.webp";
 
 function MainSection() {
   const video = require("./MainSectionVideo.mp4");
-  const video2 = require("./MainSectionVideo2.mp4");
-  const meImage = require("../images/me2.JPG");
 
   return (
     <div className="page-section" id="mainSection">
@@ -17,29 +13,50 @@ function MainSection() {
           <source src={video} type="video/mp4" />
         </video>
         <div className="image-border-div">
-          <img src={meImage} className="me-image" alt="Me"></img>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/me.JPG`}
+            className="me-image"
+            alt="Me"
+          ></img>
 
-          <Circle scale={"1.1"} strokeDash={30} animationClass={"svg-circle-opposite"}></Circle>
-          <Circle scale={"1.2"} strokeDash={20} animationClass={"svg-circle"}></Circle>
-          <Circle scale={"1.3"} strokeDash={22} animationClass={"svg-circle-opposite"}></Circle>
-          <Circle scale={"1.4"} strokeDash={15} animationClass={"svg-circle"}></Circle>
+          <Circle
+            scale={"1.1"}
+            strokeDash={30}
+            animationClass={"svg-circle-opposite"}
+          ></Circle>
+          <Circle
+            scale={"1.2"}
+            strokeDash={20}
+            animationClass={"svg-circle"}
+          ></Circle>
+          <Circle
+            scale={"1.3"}
+            strokeDash={22}
+            animationClass={"svg-circle-opposite"}
+          ></Circle>
+          <Circle
+            scale={"1.4"}
+            strokeDash={15}
+            animationClass={"svg-circle"}
+          ></Circle>
         </div>
         <div className="goal-logo-div">
           <p className="my-name">Brian Julius Kiss</p>
           <p className="goal-text">
-            Computer Science Graduate, seeking entry-level opportunities in software development
+            Computer Science Graduate, seeking entry-level opportunities in
+            software development
           </p>
 
           <div className="logo-div">
             <Logo
               logoLink="https://www.linkedin.com/in/brian-julius-kiss-256680280/"
               logoClass="logo-small"
-              logoImage={linkedInLogo}
+              logoImage="linkedin-logo.webp"
             ></Logo>
             <Logo
               logoLink="https://github.com/kjbrian9"
               logoClass="logo-small github-inverted"
-              logoImage={gitHubLogo}
+              logoImage="github-logo.png"
             ></Logo>
           </div>
         </div>

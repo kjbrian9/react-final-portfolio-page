@@ -17,22 +17,34 @@ function HamburgerMenu({ visibilityClass }: Props) {
     <div className={"hamburger-menu-div " + visibilityClass}>
       <ul>
         <li>
-          <div className="mobile-header-tab" onClick={() => scrollToTarget("mainSection")}>
+          <div
+            className="mobile-header-tab"
+            onClick={() => scrollToTarget("mainSection")}
+          >
             Home
           </div>
         </li>
 
         <li>
-          <div className="mobile-header-tab" onClick={() => scrollToTarget("aboutMeSection")}>
+          <div
+            className="mobile-header-tab"
+            onClick={() => scrollToTarget("aboutMeSection")}
+          >
             About me
           </div>
         </li>
         <li>
-          <div className="mobile-header-tab" onClick={() => scrollToTarget("projectsSection")}>
+          <div
+            className="mobile-header-tab"
+            onClick={() => scrollToTarget("projectsSection")}
+          >
             Projects
           </div>
         </li>
-        <li className="header-tab" onClick={() => scrollToTarget("contactsSection")}>
+        <li
+          className="header-tab"
+          onClick={() => scrollToTarget("contactsSection")}
+        >
           Contacts
         </li>
       </ul>
