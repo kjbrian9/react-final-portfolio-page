@@ -1,25 +1,16 @@
 {
   "files": {
-    "main.css": "/react-final-portfolio-page/static/css/main.5e3dd4c8.css",
-    "main.js": "/react-final-portfolio-page/static/js/main.dc28b1fe.js",
+    "main.css": "/react-final-portfolio-page/static/css/main.e446a612.css",
+    "main.js": "/react-final-portfolio-page/static/js/main.8b48ee64.js",
     "static/js/787.6637a194.chunk.js": "/react-final-portfolio-page/static/js/787.6637a194.chunk.js",
-    "static/media/MainSectionVideo2.mp4": "/react-final-portfolio-page/static/media/MainSectionVideo2.716f21596ab0e1dec8cb.mp4",
     "static/media/MainSectionVideo.mp4": "/react-final-portfolio-page/static/media/MainSectionVideo.a22759cbc23bb709bcf5.mp4",
-    "static/media/Youtube.png": "/react-final-portfolio-page/static/media/Youtube.39338db3148789c3ff45.png",
-    "static/media/me2.JPG": "/react-final-portfolio-page/static/media/me2.949c67f6dcb2fc86fc75.JPG",
-    "static/media/gamingEshop.png": "/react-final-portfolio-page/static/media/gamingEshop.545a33dc12c19f0f275f.png",
-    "static/media/bachelorsProgram.png": "/react-final-portfolio-page/static/media/bachelorsProgram.11bdff9b8a78e7b99a94.png",
-    "static/media/linkedin-logo.webp": "/react-final-portfolio-page/static/media/linkedin-logo.a1752771546ac17c99d4.webp",
-    "static/media/github-logo.png": "/react-final-portfolio-page/static/media/github-logo.88da611141a27050a0cb.png",
     "index.html": "/react-final-portfolio-page/index.html",
-    "static/media/LocationLogo.svg": "/react-final-portfolio-page/static/media/LocationLogo.9f10cfaa5bed90603cb90c262eac0588.svg",
-    "static/media/HamburgerMenu.svg": "/react-final-portfolio-page/static/media/HamburgerMenu.647a762cd0def5aefd66a2309218f84e.svg",
-    "main.5e3dd4c8.css.map": "/react-final-portfolio-page/static/css/main.5e3dd4c8.css.map",
-    "main.dc28b1fe.js.map": "/react-final-portfolio-page/static/js/main.dc28b1fe.js.map",
+    "main.e446a612.css.map": "/react-final-portfolio-page/static/css/main.e446a612.css.map",
+    "main.8b48ee64.js.map": "/react-final-portfolio-page/static/js/main.8b48ee64.js.map",
     "787.6637a194.chunk.js.map": "/react-final-portfolio-page/static/js/787.6637a194.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e3dd4c8.css",
-    "static/js/main.dc28b1fe.js"
+    "static/css/main.e446a612.css",
+    "static/js/main.8b48ee64.js"
   ]
 }
