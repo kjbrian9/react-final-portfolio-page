@@ -3,7 +3,8 @@
   flex-direction: row;
   justify-content: start;
   margin-top: 30vh;
-  height: 80vh;
+  height: 50vh;
+  margin-bottom: 200px;
 }
 
 .title-div {
@@ -65,5 +66,9 @@
     width: 100%;
     font-size: 3rem;
     margin-bottom: 5vh;
+  }
+  .contacts-div {
+    height: 40vh;
+    margin-top: 200px;
   }
 }

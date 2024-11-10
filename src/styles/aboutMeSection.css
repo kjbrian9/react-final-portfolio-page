@@ -38,4 +38,7 @@
   .about-me-section-title {
     align-self: center;
   }
+  .about-me-section {
+    margin-top: 0px;
+  }
 }

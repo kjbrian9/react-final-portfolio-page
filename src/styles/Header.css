@@ -84,6 +84,9 @@
   z-index: 100;
 }
 
+.hamburger-menu-div.start {
+  display: none;
+}
 .mobile-header-tab {
   cursor: pointer;
   margin: 0px 0px 20px 0px;

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "../styles/Header.css";
 
 const scrollToTarget = (targetId: string) => {
@@ -13,13 +14,23 @@ interface Props {
 }
 
 function HamburgerMenu({ visibilityClass }: Props) {
+  const [isVisible, setVisible] = useState("");
+
+  // Sync the internal state with the visibilityClass prop
+  useEffect(() => {
+    setVisible(visibilityClass);
+  }, [visibilityClass]); // Only re-run when visibilityClass changes
+
   return (
-    <div className={"hamburger-menu-div " + visibilityClass}>
+    <div className={"hamburger-menu-div " + isVisible}>
       <ul>
         <li>
           <div
             className="mobile-header-tab"
-            onClick={() => scrollToTarget("mainSection")}
+            onClick={() => {
+              scrollToTarget("mainSection");
+              setVisible("invisible");
+            }}
           >
             Home
           </div>
@@ -28,7 +39,10 @@ function HamburgerMenu({ visibilityClass }: Props) {
         <li>
           <div
             className="mobile-header-tab"
-            onClick={() => scrollToTarget("aboutMeSection")}
+            onClick={() => {
+              scrollToTarget("aboutMeSection");
+              setVisible("invisible");
+            }}
           >
             About me
           </div>
@@ -36,14 +50,20 @@ function HamburgerMenu({ visibilityClass }: Props) {
         <li>
           <div
             className="mobile-header-tab"
-            onClick={() => scrollToTarget("projectsSection")}
+            onClick={() => {
+              scrollToTarget("projectsSection");
+              setVisible("invisible");
+            }}
           >
             Projects
           </div>
         </li>
         <li
           className="header-tab"
-          onClick={() => scrollToTarget("contactsSection")}
+          onClick={() => {
+            scrollToTarget("contactsSection");
+            setVisible("invisible");
+          }}
         >
           Contacts
         </li>

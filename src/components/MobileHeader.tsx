@@ -3,15 +3,11 @@ import "../styles/Header.css";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
 function MobileHeader() {
-  const [isHamburgerMenuVisible, setHamburgerMenuVisible] = useState(false);
+  const [isHamburgerMenuVisible, setHamburgerMenuVisible] = useState("start");
 
   return (
     <>
-      <HamburgerMenu
-        visibilityClass={
-          isHamburgerMenuVisible === true ? "visible" : "invisible"
-        }
-      />
+      <HamburgerMenu visibilityClass={isHamburgerMenuVisible} />
 
       <header>
         <nav className="mobile-header">
@@ -22,10 +18,9 @@ function MobileHeader() {
                   src={`${process.env.PUBLIC_URL}/images/HamburgerMenu.svg`}
                   className="hamburger-menu-image"
                   onClick={() => {
-                    isHamburgerMenuVisible === false
-                      ? setHamburgerMenuVisible(true)
-                      : setHamburgerMenuVisible(false);
-                    console.log("hello");
+                    isHamburgerMenuVisible === "visible"
+                      ? setHamburgerMenuVisible("invisible")
+                      : setHamburgerMenuVisible("visible");
                   }}
                 ></img>
               </li>

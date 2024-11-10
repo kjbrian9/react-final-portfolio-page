@@ -3,7 +3,7 @@ import ProjectTab from "./ProjectTab";
 import { useState } from "react";
 
 function ProjectsPage() {
-  const [currentProject, setCurrentProject] = useState("gaming webshop");
+  const [currentProject, setCurrentProject] = useState("clothing eshop");
   return (
     <div className="projects-section" id="projectsSection">
       <div className="projects-page-title">Projects</div>
@@ -11,13 +11,23 @@ function ProjectsPage() {
         <div className="projects-buttons-div">
           <button
             className={
-              currentProject === "gaming webshop"
+              currentProject === "clothing eshop"
                 ? "active-project-button"
                 : "project-button"
             }
-            onClick={() => setCurrentProject("gaming webshop")}
+            onClick={() => setCurrentProject("clothing eshop")}
           >
-            Premium gaming shop
+            Clothing eshop
+          </button>
+          <button
+            className={
+              currentProject === "gaming eshop"
+                ? "active-project-button"
+                : "project-button"
+            }
+            onClick={() => setCurrentProject("gaming eshop")}
+          >
+            Gaming eshop
           </button>
           <button
             className={
@@ -37,24 +47,14 @@ function ProjectsPage() {
             }
             onClick={() => setCurrentProject("youtube front page")}
           >
-            Youtube webpage
-          </button>
-          <button
-            className={
-              currentProject === "clothing eshop"
-                ? "active-project-button"
-                : "project-button"
-            }
-            onClick={() => setCurrentProject("clothing eshop")}
-          >
-            Clothing eshop
+            Youtube page
           </button>
         </div>
-        {currentProject === "gaming webshop" ? (
+        {currentProject === "gaming eshop" ? (
           <ProjectTab
             projectImage={"gamingEshop.png"}
             projectDescription={
-              "A gaming webshop demo,showcasing the products and the brand itself"
+              "A gaming webshop demo,showcasing the products and the brand itself. The page is responsive"
             }
             projectDemo={"https://kjbrian9.github.io/gaming-webapp/"}
             projectGitHub={"https://github.com/kjbrian9/gaming-webapp"}
@@ -77,7 +77,7 @@ function ProjectsPage() {
           <ProjectTab
             projectImage={"Youtube.png"}
             projectDescription={
-              "Replication of the Youtube main-page  using css and html only "
+              "Replication of the Youtube main-page  using css and html only, the page is non responsive "
             }
             projectGitHub={"https://github.com/kjbrian9/YouTube-mainpage"}
           ></ProjectTab>
@@ -88,7 +88,7 @@ function ProjectsPage() {
           <ProjectTab
             projectImage={"ClothingEshop.png"}
             projectDescription={
-              "My bachelors thesis program focused on gathering information about GitHub repositories and evaluation these informationsf"
+              "A clothing eshop demo,showcasing the products and the brand itself. The page is responsive"
             }
             projectGitHub={"https://github.com/kjbrian9/Bachelors-program"}
           ></ProjectTab>

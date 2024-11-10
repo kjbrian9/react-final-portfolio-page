@@ -7,6 +7,51 @@
   backdrop-filter: blur(5px);
 }
 
+.first-card-left {
+  animation: slide-in-left 1s;
+}
+
+.second-card-left {
+  animation: slide-in-left 2s;
+}
+.third-card-left {
+  animation: slide-in-left 3s;
+}
+
+.first-card-right {
+  animation: slide-in-right 1s;
+}
+
+.second-card-right {
+  animation: slide-in-right 2s;
+}
+.third-card-right {
+  animation: slide-in-right 3s;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    scale: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    scale: 2;
+  }
+  100% {
+    transform: translateX(0%);
+    scale: 1;
+  }
+}
 .project-card {
   min-height: 30rem;
 }

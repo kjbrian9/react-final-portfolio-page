@@ -53,6 +53,7 @@ function MainSection() {
               logoClass="logo-small"
               logoImage="linkedin-logo.webp"
             ></Logo>
+
             <Logo
               logoLink="https://github.com/kjbrian9"
               logoClass="logo-small github-inverted"
