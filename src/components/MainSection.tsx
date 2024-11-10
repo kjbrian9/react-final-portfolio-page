@@ -14,7 +14,7 @@ function MainSection() {
         </video>
         <div className="image-border-div">
           <img
-            src={`${process.env.PUBLIC_URL}/images/me.JPG`}
+            src={`${process.env.PUBLIC_URL}/images/me.jpg`}
             className="me-image"
             alt="Me"
           ></img>
