@@ -31,13 +31,13 @@ function ProjectsPage() {
           </button>
           <button
             className={
-              currentProject === "bachelors thesis project"
+              currentProject === "bachelors project"
                 ? "active-project-button"
                 : "project-button"
             }
-            onClick={() => setCurrentProject("bachelors thesis project")}
+            onClick={() => setCurrentProject("bachelors project")}
           >
-            Bachelors thesis project
+            Bachelors project
           </button>
           <button
             className={
@@ -62,7 +62,7 @@ function ProjectsPage() {
         ) : (
           <></>
         )}
-        {currentProject === "bachelors thesis project" ? (
+        {currentProject === "bachelors project" ? (
           <ProjectTab
             projectImage={"bachelorsProgram.png"}
             projectDescription={
