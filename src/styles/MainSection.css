@@ -191,4 +191,11 @@
   .goal-logo-div {
     width: 80%;
   }
+  .goal-text {
+    text-align: center;
+  }
+  .logo-div {
+    display: flex;
+    justify-content: center;
+  }
 }
