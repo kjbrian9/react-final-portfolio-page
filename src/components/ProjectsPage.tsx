@@ -21,6 +21,16 @@ function ProjectsPage() {
           </button>
           <button
             className={
+              currentProject === "fullstack task manager"
+                ? "active-project-button"
+                : "project-button"
+            }
+            onClick={() => setCurrentProject("fullstack task manager")}
+          >
+            Task manager webpage
+          </button>
+          <button
+            className={
               currentProject === "gaming eshop"
                 ? "active-project-button"
                 : "project-button"
@@ -29,6 +39,7 @@ function ProjectsPage() {
           >
             Gaming eshop
           </button>
+
           <button
             className={
               currentProject === "bachelors project"
@@ -50,6 +61,17 @@ function ProjectsPage() {
             Youtube page
           </button>
         </div>
+        {currentProject === "fullstack task manager" ? (
+          <ProjectTab
+            projectImage={"ListFlow.png"}
+            projectDescription={`A fullstack task manager webpage. The frontend is made via CSS, HTML and JavaScript and the backend 
+               uses PHP and mySQL.
+              `}
+            projectGitHub={"https://github.com/kjbrian9/TaskManager"}
+          ></ProjectTab>
+        ) : (
+          <></>
+        )}
         {currentProject === "gaming eshop" ? (
           <ProjectTab
             projectImage={"gamingEshop.png"}
@@ -77,7 +99,7 @@ function ProjectsPage() {
           <ProjectTab
             projectImage={"Youtube.png"}
             projectDescription={
-              "Replication of the Youtube main-page  using css and html only, the page is non responsive "
+              "Replication of the Youtube main-page  using CSS and HTML only, the page is non responsive "
             }
             projectGitHub={"https://github.com/kjbrian9/YouTube-mainpage"}
           ></ProjectTab>
