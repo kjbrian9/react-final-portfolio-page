@@ -27,7 +27,7 @@ function ProjectsPage() {
             }
             onClick={() => setCurrentProject("fullstack task manager")}
           >
-            Task manager webpage
+            Todo maker
           </button>
           <button
             className={
@@ -64,7 +64,7 @@ function ProjectsPage() {
         {currentProject === "fullstack task manager" ? (
           <ProjectTab
             projectImage={"ListFlow.png"}
-            projectDescription={`A fullstack task manager webpage. The frontend is made via CSS, HTML and JavaScript and the backend 
+            projectDescription={`A fullstack task manager webpage. The frontend is made via CSS, HTML and JavaScript, and the backend 
                uses PHP and mySQL.
               `}
             projectGitHub={"https://github.com/kjbrian9/TaskManager"}
