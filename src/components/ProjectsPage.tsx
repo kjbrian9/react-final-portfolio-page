@@ -64,7 +64,7 @@ function ProjectsPage() {
         {currentProject === "fullstack task manager" ? (
           <ProjectTab
             projectImage={"ListFlow.png"}
-            projectDescription={`A fullstack task manager webpage. The frontend is made via CSS, HTML and JavaScript, and the backend 
+            projectDescription={`A fullstack todo maker webpage. The frontend is made via CSS, HTML and JavaScript, and the backend 
                uses PHP and mySQL.
               `}
             projectGitHub={"https://github.com/kjbrian9/TaskManager"}
@@ -112,7 +112,8 @@ function ProjectsPage() {
             projectDescription={
               "A clothing eshop demo,showcasing the products and the brand itself. The page is responsive"
             }
-            projectGitHub={"https://github.com/kjbrian9/Bachelors-program"}
+            projectGitHub={"https://github.com/kjbrian9/clothing-eshop"}
+            projectDemo={"https://kjbrian9.github.io/clothing-eshop/"}
           ></ProjectTab>
         ) : (
           <></>
